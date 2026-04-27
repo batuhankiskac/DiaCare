@@ -9,7 +9,8 @@
         android:id="@+id/editTextBloodSugar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your blood sugar value (mg/dL)"
+        android:hint="@string/blood_sugar_hint"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:layout_marginBottom="16dp"/>
 
@@ -17,7 +18,7 @@
         android:id="@+id/buttonSaveRecord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/save"
         android:layout_marginBottom="24dp"/>
 
     <ScrollView
