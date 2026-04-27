@@ -1,11 +1,11 @@
 package com.example.diacare;
 
-public class BloodSugarRecord {
+public class BloodSugar {
     private int sugarLevel;
     private String date;
     private String mealType;
 
-    public BloodSugarRecord(int sugarLevel, String date, String mealType) {
+    public BloodSugar(int sugarLevel, String date, String mealType) {
         setSugarLevel(sugarLevel);
         this.date = date;
         this.mealType = mealType;

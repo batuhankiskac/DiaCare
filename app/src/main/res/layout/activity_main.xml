@@ -11,7 +11,7 @@
         android:id="@+id/textViewDailyTip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Loading Daily Tip..."
+        android:text="@string/daily_tip_loading"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#333333"
@@ -22,7 +22,7 @@
         android:id="@+id/buttonBloodSugar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Blood Sugar Tracking"
+        android:text="@string/blood_sugar_tracking"
         android:textSize="16sp"
         android:layout_marginBottom="16dp" />
 
@@ -30,7 +30,7 @@
         android:id="@+id/buttonCarbCalc"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Carbohydrate Calculator"
+        android:text="@string/carb_calculator"
         android:textSize="16sp" />
 
 </LinearLayout>
