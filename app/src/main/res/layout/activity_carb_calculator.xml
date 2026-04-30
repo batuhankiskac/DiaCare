@@ -1,24 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="8dp">
-
-    <ImageView
-        android:id="@+id/imageFoodIcon"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@drawable/ic_apple"
-        android:scaleType="centerCrop"
-        android:layout_marginRight="16dp"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
     <TextView
-        android:id="@+id/textFoodName"
-        android:layout_width="wrap_content"
+        android:id="@+id/textTotalCarbs"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1 Serving Apple"
-        android:layout_gravity="center_vertical"
-        android:textSize="18sp"/>
+        android:text="Total: 0.0 g"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:padding="16dp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonAddApple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Apple"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonAddBread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bread"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:backgroundTint="#FF6B6B" />
 
 </LinearLayout>
