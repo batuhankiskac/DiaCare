@@ -42,14 +42,27 @@ public class BloodSugarActivity extends AppCompatActivity {
 
         BloodSugar record = new BloodSugar(sugarLevel, currentDate, "General Measurement");
 
+        com.google.android.material.card.MaterialCardView cardView = new com.google.android.material.card.MaterialCardView(this);
+        LinearLayout.LayoutParams cardParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+        );
+        cardParams.setMargins(0, 0, 0, 24);
+        cardView.setLayoutParams(cardParams);
+        cardView.setRadius(24f);
+        cardView.setCardElevation(4f);
+        cardView.setCardBackgroundColor(android.graphics.Color.WHITE);
+
         TextView recordView = new TextView(this);
         String recordText = getString(R.string.blood_sugar_record_format,
                 record.getDate(), record.getSugarLevel(), record.getMealType());
         recordView.setText(recordText);
         recordView.setTextSize(16f);
-        recordView.setPadding(0, 16, 0, 16);
+        recordView.setTextColor(getResources().getColor(R.color.text_primary, getTheme()));
+        recordView.setPadding(48, 48, 48, 48);
 
-        layoutRecordHistory.addView(recordView);
+        cardView.addView(recordView);
+        layoutRecordHistory.addView(cardView);
 
         editTextBloodSugar.setText("");
     }

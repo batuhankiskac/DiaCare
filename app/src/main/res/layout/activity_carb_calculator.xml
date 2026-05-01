@@ -1,42 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#F5F5F5">
+    android:background="@color/background_white"
+    android:padding="24dp"
+    tools:context=".CarbCalculatorActivity">
 
-    <TextView
-        android:id="@+id/textTotalCarbs"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTotalCarbs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total: 0.0 g"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="32dp"
-        android:padding="16dp"
-        android:background="#FFFFFF" />
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/card_white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Carbs"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textTotalCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 g"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_green" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonAddApple"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:text="Add Apple"
-        android:layout_marginBottom="16dp" />
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/button_green"
+        app:layout_constraintTop_toBottomOf="@id/cardTotalCarbs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonAddBread"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:text="Add Bread"
-        android:layout_marginBottom="16dp" />
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/button_green"
+        app:layout_constraintTop_toBottomOf="@id/buttonAddApple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonClear"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:text="Clear"
-        android:backgroundTint="#FF6B6B" />
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/button_red"
+        android:textColor="@color/button_red"
+        app:layout_constraintTop_toBottomOf="@id/buttonAddBread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
