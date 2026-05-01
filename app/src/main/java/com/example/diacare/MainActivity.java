@@ -69,7 +69,11 @@ public class MainActivity extends AppCompatActivity {
         long triggerTime = System.currentTimeMillis() + (10 * 1000);
 
         if (alarmManager != null) {
-            alarmManager.setExact(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent);
+            try {
+                alarmManager.setExact(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent);
+            } catch (SecurityException e) {
+                alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTime, pendingIntent);
+            }
         }
     }
 
