@@ -3,19 +3,50 @@
     <!-- Base Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    
-    <!-- Modern Palette -->
-    <color name="primary_red">#D32F2F</color>
-    <color name="primary_green">#2E7D32</color>
-    
-    <color name="background_white">#F5F7F8</color>
+
+    <!-- Pastel Palette -->
+    <color name="primary_teal">#7EB8C9</color>
+    <color name="primary_teal_dark">#5A9AAE</color>
+    <color name="soft_pink">#F4A7BB</color>
+    <color name="soft_pink_dark">#E88FA6</color>
+    <color name="mint_green">#95D1CC</color>
+    <color name="mint_green_dark">#7ABFB9</color>
+    <color name="light_blue">#B8D4E3</color>
+    <color name="lavender">#C5B8D9</color>
+    <color name="peach">#F5C6AA</color>
+
+    <!-- Backgrounds -->
+    <color name="background_warm">#FAF5EF</color>
     <color name="card_white">#FFFFFF</color>
-    
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
-    <color name="text_hint">#9E9E9E</color>
-    
-    <!-- Button specific colors -->
-    <color name="button_green">#43A047</color>
-    <color name="button_red">#E53935</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#3D3D3D</color>
+    <color name="text_secondary">#8A8A8A</color>
+    <color name="text_hint">#B0B0B0</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#95D1CC</color>
+    <color name="button_primary_dark">#7ABFB9</color>
+    <color name="button_secondary">#F4A7BB</color>
+    <color name="button_secondary_dark">#E88FA6</color>
+    <color name="button_outline">#7EB8C9</color>
+
+    <!-- Chart Bar Colors -->
+    <color name="chart_green">#A8E6CF</color>
+    <color name="chart_yellow">#FFD3B6</color>
+    <color name="chart_red">#FFAAA5</color>
+    <color name="chart_blue">#B8D4E3</color>
+
+    <!-- Status Colors -->
+    <color name="status_normal">#A8E6CF</color>
+    <color name="status_warning">#FFD3B6</color>
+    <color name="status_danger">#FFAAA5</color>
+
+    <!-- Legacy compatibility -->
+    <color name="primary_green">#7EB8C9</color>
+    <color name="primary_red">#F4A7BB</color>
+    <color name="background_white">#FAF5EF</color>
+    <color name="button_green">#95D1CC</color>
+    <color name="button_red">#F4A7BB</color>
 </resources>

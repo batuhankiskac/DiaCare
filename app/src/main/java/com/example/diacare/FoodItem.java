@@ -27,4 +27,9 @@ public class FoodItem {
         }
         this.carbsPerGram = carbsPerGram;
     }
+
+    @Override
+    public String toString() {
+        return name + " - " + carbsPerGram + "g";
+    }
 }
